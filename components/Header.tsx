@@ -11,7 +11,7 @@ const navLinks = [
     { name: "Werkwijze", href: "/werkwijze" }, // New page
     { name: "Diensten", href: "#services" },
     { name: "Projecten", href: "/projecten" }, // Updated to new page
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
