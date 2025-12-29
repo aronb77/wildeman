@@ -109,13 +109,6 @@ export default function ContactSection() {
 
                 </div>
 
-                {/* Footer Credit */}
-                <div className="mt-20 md:mt-32 pt-8 border-t border-slate-900 text-center">
-                    <p className="text-slate-600 font-open-sans text-sm">
-                        © 2025 Wildeman Stucadoors Elburg. Alle rechten voorbehouden.
-                    </p>
-                </div>
-
             </div>
         </section>
     );
