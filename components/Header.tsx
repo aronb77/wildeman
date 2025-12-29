@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Over Ons", href: "#about" }, // Using anchors for now as it is a one-page site structure currently
+    { name: "Werkwijze", href: "/werkwijze" }, // New page
     { name: "Diensten", href: "#services" },
-    { name: "Projecten", href: "#portfolio" },
+    { name: "Projecten", href: "/projecten" }, // Updated to new page
     { name: "Contact", href: "#contact" },
 ];
 
@@ -74,7 +74,7 @@ export default function Header() {
                     {/* Right Actions */}
                     <div className="flex items-center gap-4">
                         <Link
-                            href="#contact"
+                            href="/offerte"
                             className="hidden md:flex bg-wildeman-blauw text-white px-5 py-2 rounded-full text-sm font-bold font-montserrat items-center gap-2 hover:bg-blue-700 transition-colors"
                         >
                             Offerte
@@ -135,7 +135,7 @@ export default function Header() {
                                 className="mt-8"
                             >
                                 <Link
-                                    href="#contact"
+                                    href="/offerte"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className="bg-wildeman-blauw text-white px-8 py-3 rounded-full text-lg font-bold font-montserrat flex items-center gap-2"
                                 >
