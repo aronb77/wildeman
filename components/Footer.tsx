@@ -31,16 +31,22 @@ export default function Footer() {
                     <div className="space-y-4">
                         <h4 className="text-white font-montserrat font-bold text-lg mb-4">Navigatie</h4>
                         <ul className="space-y-2">
-                            {["Home", "Diensten", "Projecten", "Contact"].map((item) => (
-                                <li key={item}>
+                            {[
+                                { name: "Home", href: "/" },
+                                { name: "Werkwijze", href: "/werkwijze" },
+                                { name: "Projecten", href: "/projecten" },
+                                { name: "Offerte", href: "/offerte" },
+                                { name: "Contact", href: "/contact" }
+                            ].map((item) => (
+                                <li key={item.name}>
                                     <Link
-                                        href="#"
+                                        href={item.href}
                                         className="group flex items-center gap-2 hover:text-white transition-colors"
                                     >
                                         <motion.span
                                             className="w-1.5 h-1.5 bg-wildeman-blauw rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
                                         />
-                                        {item}
+                                        {item.name}
                                     </Link>
                                 </li>
                             ))}
