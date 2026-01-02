@@ -161,30 +161,6 @@ export default function ContactPage() {
                     />
 
                     {/* Overlay to darken slightly if needed for better contrast with pin? Or just keep it clean */}
-                    {/* Animated Pin */}
-                    <motion.div
-                        initial={{ y: -500, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{
-                            type: "spring",
-                            stiffness: 200,
-                            damping: 20,
-                            delay: 0.5
-                        }}
-                        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group"
-                    >
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group">
-                            {/* Tooltip */}
-                            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-1 bg-white text-beton-donker text-xs font-bold rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                                Hier zit de vakman
-                                <div className="absolute top-full left-1/2 -translate-x-1/2 -translate-y-1 border-4 border-transparent border-t-white" />
-                            </div>
-
-                            {/* Pin Icon */}
-                            <MapPin className="w-12 h-12 text-wildeman-blauw drop-shadow-2xl fill-wildeman-blauw" />
-                        </div>
-                    </motion.div>
-
                 </div>
 
                 {/* Mobile Footer Fix: If Layout is changed, footer needs to be somewhere. 
