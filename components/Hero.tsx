@@ -88,7 +88,7 @@ export default function Hero() {
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 1.8 }}
-                        className="flex flex-col md:flex-row gap-4 justify-center md:justify-start"
+                        className="relative z-30 flex flex-col md:flex-row gap-4 justify-center md:justify-start"
                     >
                         <Link href="/offerte" className="group bg-wildeman-blauw text-white px-8 py-4 rounded-xl font-montserrat font-bold text-lg inline-flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-lg shadow-blue-900/10 hover:-translate-y-1">
                             Bereken je prijs

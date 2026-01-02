@@ -54,7 +54,7 @@ export default function Header() {
 
                     {/* Desktop Nav */}
                     <nav className="hidden md:flex items-center gap-1">
-                        {navLinks.filter(l => l.name !== "Contact").map((link) => ( // Filter contact out to keep it clean or keep it? Request said "Home, Over, Diensten, Projecten". Contact usually implies the button.
+                        {navLinks.map((link) => ( // Removed filter for Contact
                             <Link
                                 key={link.name}
                                 href={link.href}
