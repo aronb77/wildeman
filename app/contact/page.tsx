@@ -92,16 +92,16 @@ export default function ContactPage() {
                             <CopyItem
                                 icon={Phone}
                                 label="Telefoon"
-                                value="06-12345678"
-                                displayValue="06 - 1234 5678"
-                                href="tel:0612345678"
+                                value="0652272843"
+                                displayValue="06 52 27 28 43"
+                                href="tel:0652272843"
                             />
                             <CopyItem
                                 icon={Mail}
                                 label="E-mail"
-                                value="info@wildemanstucadoors.nl"
-                                displayValue="info@wildemanstucadoors.nl"
-                                href="mailto:info@wildemanstucadoors.nl"
+                                value="Info@stukadoorsbedrijf-wildeman.nl"
+                                displayValue="Info@stukadoorsbedrijf-wildeman.nl"
+                                href="mailto:Info@stukadoorsbedrijf-wildeman.nl"
                             />
                             <div className="flex items-center gap-4 p-6 bg-slate-50 rounded-xl">
                                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-wildeman-blauw shadow-sm">
@@ -118,7 +118,7 @@ export default function ContactPage() {
                         <div className="grid grid-cols-2 gap-y-4 gap-x-8 text-sm text-slate-500 font-open-sans mb-12 border-t border-slate-100 pt-8">
                             <div>
                                 <span className="font-bold text-beton-donker block">KVK</span>
-                                12345678
+                                8144125
                             </div>
                             <div>
                                 <span className="font-bold text-beton-donker block">BTW</span>

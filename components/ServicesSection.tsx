@@ -25,7 +25,7 @@ const services = [
 
 export default function ServicesSection() {
     return (
-        <section className="py-20 md:py-32 bg-white relative">
+        <section id="diensten" className="py-20 md:py-32 bg-white relative">
             <div className="container mx-auto px-4">
 
                 {/* Section Header */}

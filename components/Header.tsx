@@ -9,8 +9,7 @@ import { cn } from "@/lib/utils";
 const navLinks = [
     { name: "Home", href: "/" },
     { name: "Werkwijze", href: "/werkwijze" },
-    { name: "Diensten", href: "/#services" },
-    { name: "Projecten", href: "/projecten" },
+    { name: "Diensten", href: "/#diensten" }, // Fixed: Scroll to services section
     { name: "Contact", href: "/contact" },
 ];
 

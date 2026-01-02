@@ -106,7 +106,11 @@ export default function Footer() {
             </div>
 
             {/* Tiny bottom margin just to give the text some breathing room if needed, or stick to bottom */}
-            <div className="h-4 sm:h-8 md:h-12 bg-slate-950" />
+            <div className="h-4 sm:h-8 md:h-12 bg-slate-950 flex justify-center items-end pb-2">
+                <a href="https://vossendesign.nl" target="_blank" rel="noopener noreferrer" className="text-[10px] text-slate-700 hover:text-slate-500 transition-colors uppercase tracking-widest font-bold">
+                    Made by Vossen Design
+                </a>
+            </div>
         </footer>
     );
 }
