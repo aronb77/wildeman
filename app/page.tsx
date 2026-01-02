@@ -1,18 +1,16 @@
 import Hero from "@/components/Hero";
-import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
-import PortfolioSection from "@/components/PortfolioSection";
-import ContactSection from "@/components/ContactSection";
+import WerkwijzeTeaser from "@/components/WerkwijzeTeaser";
+import ContactGrid from "@/components/ContactGrid";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <AboutSection />
       <ServicesSection />
-      <PortfolioSection />
-      <ContactSection />
+      <WerkwijzeTeaser />
+      <ContactGrid />
       <Footer />
     </main>
   );

@@ -34,7 +34,6 @@ export default function Footer() {
                             {[
                                 { name: "Home", href: "/" },
                                 { name: "Werkwijze", href: "/werkwijze" },
-                                { name: "Projecten", href: "/projecten" },
                                 { name: "Offerte", href: "/offerte" },
                                 { name: "Contact", href: "/contact" }
                             ].map((item) => (
@@ -71,12 +70,15 @@ export default function Footer() {
 
                     {/* Column 3: Legal */}
                     <div className="space-y-4">
-                        <h4 className="text-white font-montserrat font-bold text-lg mb-4">Juridisch</h4>
+                        <h4 className="text-white font-montserrat font-bold text-lg mb-4">Stukadoorsbedrijf Wildeman</h4>
+                        <address className="not-italic text-sm text-slate-400 space-y-1 mb-4 font-open-sans">
+                            <p>Vrijheid 1</p>
+                            <p>8081 PH Elburg</p>
+                        </address>
                         <ul className="space-y-2 text-sm">
+                            <li className="pt-2">KVK: 8144125</li>
                             <li><Link href="#" className="hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-                            <li className="pt-2">KVK: 12345678</li>
-                            <li>BTW: NL123456789B01</li>
                         </ul>
                     </div>
 

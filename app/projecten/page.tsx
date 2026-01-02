@@ -9,28 +9,28 @@ import Footer from "@/components/Footer";
 const projects = [
     {
         id: 1,
-        title: "Vervallen Boerderij",
+        title: "Renovatie Jaren '30 Woning",
         category: "Renovatie",
-        before: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=1000&auto=format&fit=crop", // Rough texture
-        after: "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1000&auto=format&fit=crop", // Clean modern wall
+        before: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop",
+        after: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1000&auto=format&fit=crop",
     },
     {
         id: 2,
-        title: "Nieuwbouw Villa",
+        title: "Strakke Nieuwbouw Villa",
         category: "Nieuwbouw",
-        before: "https://images.unsplash.com/photo-1590483038661-30c1be7826d9?q=80&w=1000&auto=format&fit=crop", // Construction site
-        after: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop", // Finished living room
+        before: "https://images.unsplash.com/photo-1621293954908-54d3370954f0?q=80&w=1000&auto=format&fit=crop",
+        after: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop",
     },
     {
         id: 3,
-        title: "Sierpleister Woonkamer",
+        title: "Woonkamer Sierpleister",
         category: "Renovatie",
-        before: "https://images.unsplash.com/photo-1549420042-32b0f340875e?q=80&w=1000&auto=format&fit=crop",
-        after: "https://images.unsplash.com/photo-1629895028045-8f63567b5cdd?q=80&w=1000&auto=format&fit=crop",
+        before: "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?q=80&w=1000&auto=format&fit=crop",
+        after: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1000&auto=format&fit=crop",
     },
     {
         id: 4,
-        title: "Badkamer Betonlook",
+        title: "Badkamer Beton Ciré",
         category: "Nieuwbouw",
         before: "https://images.unsplash.com/photo-1620626012053-1c19794cb22c?q=80&w=1000&auto=format&fit=crop",
         after: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1000&auto=format&fit=crop",
@@ -76,8 +76,8 @@ export default function ProjectsPage() {
                             key={filter}
                             onClick={() => setActiveFilter(filter)}
                             className={`px-6 py-2 rounded-full font-montserrat font-semibold transition-all duration-300 ${activeFilter === filter
-                                    ? "bg-wildeman-blauw text-white shadow-md scale-105"
-                                    : "bg-slate-100 text-slate-500 hover:bg-slate-200"
+                                ? "bg-wildeman-blauw text-white shadow-md scale-105"
+                                : "bg-slate-100 text-slate-500 hover:bg-slate-200"
                                 }`}
                         >
                             {filter}

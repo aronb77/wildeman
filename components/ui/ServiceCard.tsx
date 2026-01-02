@@ -10,7 +10,7 @@ interface ServiceCardProps {
     index: number;
 }
 
-export const ServiceCard = ({ title, description, icon: Icon, index }: ServiceCardProps) => {
+export const ServiceCard = ({ title, description, icon: Icon, index, featured = false }: ServiceCardProps & { featured?: boolean }) => {
     return (
         <motion.div
             variants={{
@@ -27,12 +27,16 @@ export const ServiceCard = ({ title, description, icon: Icon, index }: ServiceCa
                 hover: { y: -10 } // Lift card on hover
             }}
             whileHover="hover"
-            className="group relative bg-slate-50 border border-slate-100 p-8 rounded-sm overflow-hidden cursor-default shadow-sm hover:shadow-lg transition-shadow duration-300"
+            className={`group relative p-8 rounded-2xl overflow-hidden cursor-default shadow-sm hover:shadow-lg transition-all duration-300 ${featured
+                    ? "bg-blue-50/50 border-2 border-wildeman-oranje shadow-md"
+                    : "bg-white border border-slate-100"
+                }`}
         >
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center text-center space-y-4">
-                <div className="p-4 bg-white rounded-full shadow-sm text-wildeman-blauw group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="w-8 h-8" strokeWidth={1.5} />
+                <div className={`p-4 rounded-full shadow-sm transition-transform duration-300 group-hover:scale-110 ${featured ? "bg-wildeman-oranje text-white" : "bg-blue-50 text-wildeman-blauw"
+                    }`}>
+                    <Icon className="w-8 h-8" strokeWidth={2.5} />
                 </div>
 
                 <h3 className="text-xl font-montserrat font-bold text-beton-donker">
@@ -42,6 +46,12 @@ export const ServiceCard = ({ title, description, icon: Icon, index }: ServiceCa
                 <p className="text-gray-600 font-open-sans leading-relaxed">
                     {description}
                 </p>
+
+                {featured && (
+                    <span className="absolute top-0 right-0 bg-wildeman-oranje text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                        POPULAIRE KEUZE
+                    </span>
+                )}
             </div>
 
             {/* The Sheen Effect */}
