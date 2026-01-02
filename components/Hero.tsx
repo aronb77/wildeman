@@ -16,7 +16,7 @@ export default function Hero() {
         <section ref={containerRef} className="relative min-h-[90vh] w-full overflow-hidden bg-strak-wit flex items-center justify-center pb-20">
 
             {/* Background Image with Wipe Reveal & Parallax */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 pointer-events-none">
                 <motion.div
                     className="absolute inset-0 z-10 bg-strak-wit"
                     initial={{ x: "0%" }}
@@ -37,7 +37,7 @@ export default function Hero() {
             </div>
 
             {/* Content */}
-            <div className="relative z-20 container mx-auto px-4 text-center md:text-left">
+            <div className="relative z-40 container mx-auto px-4 text-center md:text-left">
                 <div className="max-w-4xl mx-auto md:mx-0 pt-20">
 
                     {/* Headline Masks */}
