@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieBanner from "@/components/CookieBanner";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -30,8 +32,10 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${openSans.variable} antialiased`}
       >
+        <GoogleAnalytics ga_id="G-XXXXXXXXXX" />
         <Header />
         {children}
+        <CookieBanner />
       </body>
     </html>
   );
