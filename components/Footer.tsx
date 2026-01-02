@@ -77,8 +77,8 @@ export default function Footer() {
                         </address>
                         <ul className="space-y-2 text-sm">
                             <li className="pt-2">KVK: 8144125</li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/algemene-voorwaarden" className="hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
+                            <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
                         </ul>
                     </div>
 

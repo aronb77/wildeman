@@ -52,6 +52,7 @@ export default function OfferteWizard() {
         email: "",
         phone: "",
         zip: "",
+        agreedToTerms: false,
     });
 
     const handleNext = () => {
@@ -99,7 +100,7 @@ export default function OfferteWizard() {
             case 3: return formData.spaces.length > 0;
             case 4: return true; // Slider always has value
             case 5: return !!formData.finish;
-            case 6: return !!formData.name && !!formData.email && !!formData.phone;
+            case 6: return !!formData.name && !!formData.email && !!formData.phone && formData.agreedToTerms === true;
             default: return false;
         }
     };
@@ -376,6 +377,19 @@ export default function OfferteWizard() {
                                                 className="w-full p-4 rounded-2xl border-2 border-slate-100 focus:border-wildeman-blauw focus:ring-0 outline-none bg-slate-50 transition-colors font-open-sans font-medium"
                                                 placeholder="uw@email.nl"
                                             />
+                                        </div>
+
+                                        {/* Legal Checkbox */}
+                                        <div className="pt-4 flex items-start gap-3 group cursor-pointer" onClick={() => updateField("agreedToTerms", !formData.agreedToTerms)}>
+                                            <div className={cn(
+                                                "w-6 h-6 rounded-md border-2 flex items-center justify-center shrink-0 transition-colors mt-0.5",
+                                                formData.agreedToTerms ? "bg-wildeman-blauw border-wildeman-blauw" : "border-slate-300 group-hover:border-wildeman-blauw"
+                                            )}>
+                                                {formData.agreedToTerms && <Check className="w-4 h-4 text-white" />}
+                                            </div>
+                                            <label className="text-sm text-slate-600 leading-snug cursor-pointer select-none">
+                                                Ik ga akkoord met de <Link href="/algemene-voorwaarden" target="_blank" className="text-wildeman-blauw underline hover:text-blue-700" onClick={(e) => e.stopPropagation()}>Algemene Voorwaarden</Link>.
+                                            </label>
                                         </div>
                                     </div>
                                 )}
